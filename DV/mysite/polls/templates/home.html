@@ -1,0 +1,161 @@
+
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DV_Práctica Final</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">		
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.5/nv.d3.min.css">
+	
+ 
+ 
+  </head>
+  <body>
+	
+	<div class="container-fluid">
+	<h1 id="title">DV_Práctica Final</h1>
+	<p>- Alberto Terrón Gómez</p>
+	<p>- Miguel Anguel Ramos Molero</p>
+	<p>- Gonzalo Sayalero Rodríguez</p>
+  
+ <hr color="blue" size=3>
+ <hr color="blue" size=3>
+ <hr color="blue" size=3>
+  
+	<div class="container-fluid">
+    <div class="row">
+			<div class="col-md-8 col-md-offset-3">
+			  <h1 id="title">Grafica 1: Salarios por genero y categoría laboral</h1>
+			</div>
+			<div class="col-md-8 col-md-offset-2">
+        <div id="chart2">
+          <svg width="1000px" height="400px"></svg>
+        </div>
+			</div>
+		</div>
+	</div>
+	
+<!-- Comentario grafico 1 -->
+	<div class="container-fluid">
+    <div class="row">
+			<div class="col-md-8 col-md-offset-3">
+			<h2 id="title">INFORME</h2>
+			
+<hr color="blue" size=3>
+
+			<h3 id="title2"> 1. Analisis de la gráfica 1</h3>
+							<p>El salario medio de las mujeres siempre es inferior al salario medio de los hombres, tanto en total como en las distintas categorías profesionales.
+							La brecha salarial entre hombres y mujeres se va haciendo mayor cuanto más importante es la la categoria profesional observada. Es decir, a mayor cargo en una empresa mayor brecha salarial.</p>
+							<p>- En azul apreciamos el salario medio en general.</p>
+							<p>- En naranja apreciamos el salario medio de un ejecutivo.</p>
+							<p>- En verde apreciamos el salario medio de un manager .</p>
+							<p>- En rojo apreciamos el salario medio de un empleado.</p>
+							<p>- En morado apreciamos el salario medio de un trabajador.</p>
+<hr color="blue" size=3>
+			
+			<h3 id="title3"> 2. Justficación de la gráfica 1</h3>
+							<p>- El gráfico de barras permite una correcta y clara visualización de los datos mostrados.</p>
+			</div>
+			<div class="col-md-8 col-md-offset-2">	
+			</div>
+		</div>
+	</div>
+	
+	<hr color="blue" size=3>
+	<hr color="blue" size=3>
+	<hr color="blue" size=3>
+	
+	<div class="container-fluid">
+    <div class="row">
+			<div class="col-md-8 col-md-offset-3">
+			  <h1 id="title">Grafica 2: Brecha salarial por genero y región</h1>
+			</div>
+			<div class="col-md-0 col-md-offset-1">
+        <div id="chart3">
+          <svg width="1400px" height="400px"></svg>
+        </div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Comentario grafico 2 -->
+	
+	<div class="container-fluid">
+    <div class="row">
+			<div class="col-md-8 col-md-offset-3">
+			<h2 id="title">INFORME</h2>
+			
+<hr color="blue" size=3>
+
+			<h3 id="title2"> 1. Analisis de la gráfica 2</h3>
+							<p>Existe brecha salarial en todas las regiones de Francia, en términos absolutos, aumenta en las regiones donde mayores salarios medios hay.</p>
+							<p>Las regiones francesas con mayor desigualdad salarial absoluta son Île de France, Rhône Alpes y Provence Alpes - Côte d'Azur, con la ciudad Saint Nom la Bretèche, próxima a Paris,
+							   donde encontramos una mayor diferencia salarial por género. Los territorios de ultramar franceses
+							   (La Réunion, Guyane, Guadeloupe, Martinique) son donde encontramos la menor desigualdad salarial,
+							   explicado también por el reducido tamaño de sus economías. Cuanto mayores son los salarios medios, mayor diferencia salarial absoluta hay.</p>
+							
+<hr color="blue" size=3>
+			
+			<h3 id="title3"> 2. Justficación de la gráfica 2</h3>
+							<p>- El gráfico de barras permite una correcta y clara visualización de los datos mostrados, ademas se puede apreciar de mayor a menor la brecha salarial
+							     por lo que sacaremos mas facilmente las  conclusiones del analisis.</p>
+			</div>
+			<div class="col-md-8 col-md-offset-2">	
+			</div>
+		</div>
+	</div>
+	
+<hr color="blue" size=3>
+<hr color="blue" size=3>
+<hr color="blue" size=3>
+
+	<div class="container-fluid">
+    <div class="row">
+			<div class="col-md-8 col-md-offset-3">
+			<h2 id="title">Origen de los datos</h2>
+		    
+		<p>Pagina de donde sacamos los datos ==> <a href= "https://www.kaggle.com/etiennelq/french-employment-by-town"> https://www.kaggle.com/etiennelq/french-employment-by-town </a> </p> 
+		
+		
+<hr color="blue" size=3>		
+		
+		</p>La fuente de datos elegida ha sido el dataset French employment, salaries, population per town. Hemos seleccionado este dataset para realizar
+		    un análisis gráfico de la desigualdad salarial en la economía francesa por género, puesto laboral y región, debido a la  relevancia del tema en la actualidad,
+			y a la lucha de diversos colectivos por que se tome mayor conciencia y se tomen medidad al respecto ya que por el mismo trabajo independientemente de quien lo 
+            realice se deberia cobrar un mismo salario.		
+			La limpieza de los datos la hemos realizado mediante python.</p>
+			
+		
+	
+	
+
+	
+	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	  
+    <!-- Libreria de D3-->
+    <script src="http://nvd3.org/assets/lib/d3.v3.js"></script>
+    
+    <!-- Libreria de NV D3-->
+    <script src="http://nvd3.org/assets/js/nv.d3.js"></script>
+	
+	<script src="http://nvd3.org/assets/js/data/stream_layers.js"></script>
+
+	<script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+	
+	
+    
+
+  </body>
+</html>
